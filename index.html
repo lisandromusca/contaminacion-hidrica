@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contaminación Hídrica</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="water-bg">
+        <div class="water-animation"></div>
+    </div>
+    <div class="container">
+        <h1 style="color: #20adff">Contaminación Hídrica</h1>
+        <div id="quiz-container">
+            <div id="question-container">
+                <h2 id="question"></h2>
+                <div id="answer-buttons" class="btn-grid">
+                    <!-- Answer buttons will be dynamically added here -->
+                </div>
+            </div>
+            <div class="controls">
+                <button id="start-btn" class="start-btn btn">Iniciar Juego</button>
+                <button id="next-btn" class="next-btn btn hide">Siguiente</button>
+            </div>
+        </div>
+        <div id="result-container" class="hide">
+            <h2>Resultados</h2>
+            <p>Puntaje: <span id="score"></span></p>
+            <button id="restart-btn" class="btn">Jugar de Nuevo</button>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
